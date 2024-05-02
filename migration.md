@@ -1,4 +1,5 @@
 # 1. Assessment and Planning:
+
 Analyze Existing Codebase:
 Understand the structure, dependencies, and complexity of the existing codebase.
 Define Migration Goals:
