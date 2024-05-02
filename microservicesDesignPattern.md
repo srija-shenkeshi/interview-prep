@@ -32,7 +32,7 @@ Benefits:<br/>
 Dynamic service discovery<br/>
 Load balancing<br/>
 Fault tolerance<br/>
-2. Service Discovery Pattern:<br/>
+# 4. Service Discovery Pattern:<br/>
 Description: The Service Discovery pattern allows services to find and communicate with each other without needing to know the network location of the other services.<br/>
 How it works:<br/>
 Services register with a service discovery tool, which maintains a dynamic directory of available services.<br/>
