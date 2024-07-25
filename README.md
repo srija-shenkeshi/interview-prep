@@ -136,7 +136,9 @@ One-to-many mapping occurs in flatMap().
 HashMap is not synchronized. One key can be a NULL value. faster
 
 Unordered: The HashMap does not guarantee any specific order of the keys or values.
+
 Allows nulls: HashMap allows one null key and multiple null values.
+
 Non-synchronized: It is not thread-safe. If multiple threads access a HashMap concurrently and at least one of the threads modifies the map structurally, it must be synchronized externally.
 
 
@@ -173,6 +175,16 @@ stores the elements in a sorted order that is determined by the natural ordering
 
 ## Exception Handling?
 An Exception is an Event that interrupts the normal flow of the program and requires special processing.
+
+try: The block of code that might throw an exception.
+
+catch: The block of code that handles the exception.
+
+finally: The block of code that executes regardless of whether an exception was thrown or not.
+
+throw: Used to explicitly throw an exception.
+
+throws: Declares that a method can throw an exception.
 
 **Built-in exceptions:** These exceptions can be further divided into two subcategories i.e., checked and unchecked Exceptions.
 Below are some of the built-in exceptions in Java:
@@ -235,7 +247,8 @@ Lambda expression helps us to write our code in functional style.
 It provides a clear and concise way to implement SAM interface(Single Abstract Method) by using an expression.
 
 ## Method References
-used to refer method of functional interface . It is compact and easy form of lambda expression. 
+shorthand notation of a lambda expression to call a method.
+
 Each time when you are using lambda expression to just referring a method, you can replace your lambda expression with method reference.
 
 ## Functional Interface
@@ -261,6 +274,8 @@ Java provides a facility to create default methods inside the interface.
 Methods which are defined inside the interface and tagged with default keyword are known as default methods. 
 These methods are non-abstract methods and can have method body.
 
+Default methods allow interfaces to have methods with a default implementation that can be overridden by implementing classes.
+
 ## Singleton design pattern
 define a class that has only one instance and provides a global point of access to it
 In other words, a class must ensure that only single instance should be created and single object can be used by all other classes.
@@ -271,6 +286,8 @@ Lazy Instantiation: creation of instance when required.
 
 ## How to create Singleton design pattern?
 Static member: It gets memory only once because of static, it contains the instance of the Singleton class.
+
 Private constructor: It will prevent to instantiate the Singleton class from outside the class.
+
 Static factory method: This provides the global point of access to the Singleton object and returns the instance to the caller.
 +
