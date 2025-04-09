@@ -154,13 +154,13 @@ stores the elements in a sorted order that is determined by the natural ordering
 
 ## difference between Comparable and Comparator?
 
-| Comparable                                              |                            Comparator |
+| Comparable                                              |                            Comparator (functioanl interface)     |
 | :------------------------------------------------------ | ---------------------------------------------------------------: |
 | The interface is present in java.lang package.          |                   The Interface is present in java.util package. |
-| Provides compareTo() method to sort elements.           |                   Provides compare() method to sort elements. |
-| It provides single sorting sequences.                   |                    It provides multiple sorting sequences. |
+| Provides compareTo() method to sort elements.           |                   Provides compare() method to sort elements.    |
+| It provides single sorting sequences.                   |                    It provides multiple sorting sequences.       |
 | Method sorts the data according to fixed sorting order. | Method sorts the data according to the customized sorting order. |
-| It affects the original class.                          |                    It doesn't affect the original class. |
+| It affects the original class.                          |                    It doesn't affect the original class.         |
 
 
 
@@ -290,4 +290,26 @@ Static member: It gets memory only once because of static, it contains the insta
 Private constructor: It will prevent to instantiate the Singleton class from outside the class.
 
 Static factory method: This provides the global point of access to the Singleton object and returns the instance to the caller.
+
+public class Singleton {
+    // Eagerly created instance of Singleton
+    private static final Singleton instance = new Singleton();
+
+    // Private constructor prevents instantiation from other classes
+    private Singleton() {}
+
+    // Public method to provide access to the instance
+    public static Singleton getInstance() {
+        return instance;
+    }
+}
+
+
+## Interfaces Diamond problem Multiple inheritance
+
+ Resolving the conflict by overriding the start method
+    @Override
+    public void start() {
+        // We can choose to call one of the default methods explicitly
+        Vehicle.super.start();
 +
